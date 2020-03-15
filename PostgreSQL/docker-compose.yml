@@ -5,7 +5,7 @@ services:
     image: postgres:11.2-alpine
     restart: always
     environment:
-      POSTGRES_DB: feathersapril
+      POSTGRES_DB: mypgdb
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: pass
     volumes:
