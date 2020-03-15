@@ -1,0 +1,23 @@
+{
+  "folders": [
+	{
+		"path": "Microsoft_SQL_Server"
+	},
+	{
+		"path": "MariaDB"
+	},
+	{
+		"path": "MongoDB"
+	},
+	{
+		"path": "PostgreSQL"
+	},
+	{
+		"path": "Redis"
+	},
+	{
+		"path": "MySQL"
+	}
+],
+  "settings": {}
+}

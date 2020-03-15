@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  mssql:
+    image: "mcr.microsoft.com/mssql/server"
+    restart: always
+    environment:
+      SA_PASSWORD: "Pass123!"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - mssql-data:/var/lib/mssql
+    ports:
+      - 1434:1433
+
+volumes:
+  mssql-data:
+
+networks:
+  dev:
+    driver: bridge
+# Address in DatGrip jdbc:sqlserver://localhost\databasename:1433
+# "Data Source=localhost,1433;Initial Catalog=db;User id=sa;Password=Pass123!;MultipleActiveResultSets=True"

@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres:11.2-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: feathersapril
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pass
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - 5433:5432 #5433, because the installed Postgres on my machine uses 5432
+
+volumes:
+  postgres-data:
+
+networks:
+  dev:
+    driver: bridge
+#server connection-string jdbc:postgresql://localhost:5433/databasename

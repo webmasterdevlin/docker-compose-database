@@ -1,0 +1,63 @@
+version: '3.7'
+
+services:
+
+  redis:
+    image: redis:5.0.4-alpine3.9
+    # ports:
+    #   - 6379:6379
+
+
+    
+
+
+# version: '3'
+# services:
+#   app:
+#     image: lagden/cep_consulta:5.0.0
+#     command: ["node", "index.js"]
+#     environment:
+#       - NODE_ENV=production
+#       - RHOST=redis
+#     ports:
+#       - 1235:3000
+#     networks:
+#       - redis-net
+#     depends_on:
+#       - redis
+
+#   redis:
+#     image: redis:4.0.5-alpine
+#     command: ["redis-server", "--appendonly", "yes"]
+#     hostname: redis
+#     networks:
+#       - redis-net
+#     volumes:
+#       - redis-data:/data
+
+# networks:
+#   redis-net:
+
+# volumes:
+#   redis-data:
+
+
+# redis:
+#   image: redis
+#   container_name: cache
+#   expose:
+#     - 6379
+# app:
+#   build: ./
+#   volumes:
+#     - ./:/var/www/app
+#   links:
+#     - redis
+#   ports:
+#     - 3000:3000
+#   environment:
+#     - REDIS_URL=redis://cache
+#     - NODE_ENV=development
+#     - PORT=3000
+#   command:
+#     sh -c 'npm i && node server.js'

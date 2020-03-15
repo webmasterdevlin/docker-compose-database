@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+
+  mariadb:
+    image: mariadb:10.4.4
+    restart: always
+    environment:
+      MYSQL_DATABASE: docker_maria
+      MYSQL_ROOT_PASSWORD: pass
+    volumes:
+      - mariadb-data:/var/lib/mariadb
+    ports:
+      - 3306:3306
+
+volumes:
+  mariadb-data:
+
+networks:
+  dev:
+    driver: bridge
+
+# feathersjs connection string mysql://root:pass@localhost:3306/databasename
+# data grip connection string jdbc:mariadb://localhost:3306/databasename
