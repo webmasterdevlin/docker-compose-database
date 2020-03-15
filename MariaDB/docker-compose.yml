@@ -1,7 +1,6 @@
-version: '3.7'
+version: "3.7"
 
 services:
-
   mariadb:
     image: mariadb:10.4.4
     restart: always
@@ -19,6 +18,5 @@ volumes:
 networks:
   dev:
     driver: bridge
-
-# feathersjs connection string mysql://root:pass@localhost:3306/databasename
+# connection string mysql://root:pass@localhost:3306/databasename
 # data grip connection string jdbc:mariadb://localhost:3306/databasename
