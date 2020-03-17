@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  couchdb:
+    image: couchdb:3
+    container_name: CouchDB
+    volumes: -couchdb-data:/opt/couchdb/data
+    ports:
+      - "5984:5984"
+    networks:
+      - dev
+
+volumes:
+  couchdb-data:
+    driver: local
+
+networks:
+  dev:
+    driver: bridge

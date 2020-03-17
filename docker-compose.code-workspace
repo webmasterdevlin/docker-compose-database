@@ -1,23 +1,30 @@
 {
   "folders": [
-	{
-		"path": "Microsoft_SQL_Server"
-	},
-	{
-		"path": "MariaDB"
-	},
-	{
-		"path": "MongoDB"
-	},
-	{
-		"path": "PostgreSQL"
-	},
-	{
-		"path": "Redis"
-	},
-	{
-		"path": "MySQL"
-	}
-],
-  "settings": {}
+    {
+      "path": "Microsoft_SQL_Server"
+    },
+    {
+      "path": "MariaDB"
+    },
+    {
+      "path": "MongoDB"
+    },
+    {
+      "path": "PostgreSQL"
+    },
+    {
+      "path": "Redis"
+    },
+    {
+      "path": "MySQL"
+    },
+    {
+      "path": "CouchDB"
+    }
+  ],
+  "settings": {
+    "cSpell.words": [
+      "couchdb"
+    ]
+  }
 }
