@@ -3,6 +3,7 @@ version: "3.7"
 services:
   mongo:
     image: mongo:latest
+    container_name: DevlinMongoDB
     restart: always
     volumes:
       - mongo-data:/data/db
@@ -11,10 +12,10 @@ services:
     ports:
       - 27017:27017
 
-  mongo-seed:
-    build: ./mongo-seed
-    links:
-      - mongo
+  #mongo-seed:
+  #  build: ./mongo-seed
+  #  links:
+  #    - mongo
 
 volumes:
   mongo-data:
