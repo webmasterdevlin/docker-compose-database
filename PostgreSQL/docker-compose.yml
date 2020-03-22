@@ -3,9 +3,10 @@ version: "3.7"
 services:
   postgres:
     image: postgres:12.2-alpine
+    container_name: PostgreSQL
     restart: always
     environment:
-      POSTGRES_DB: mypgdb
+      POSTGRES_DB: postgresDB
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: pass
     volumes:
