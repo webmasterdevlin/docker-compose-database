@@ -13,11 +13,14 @@ $ docker-compose down
 $ docker-compose down -v
 ```
 
-#### One liner to stop / remove all of Docker containers:
+#### One liner to stop / remove all of Docker containers and images:
+
 ```zsh
 $ docker stop $(docker ps -a -q)
 $ docker rm $(docker ps -a -q)
+$ docker rmi $(docker images -a -q)
 ```
 
 ## MongoDB Compass
+
 [https://www.mongodb.com/products/compass](https://www.mongodb.com/products/compass)
