@@ -1,7 +1,7 @@
-version: "3.7"
+version: "3.8"
 
 services:
- mssql:
+  mssql:
     image: "mcr.microsoft.com/mssql/server"
     container_name: MS_SQL_Server
     restart: always
@@ -13,8 +13,8 @@ services:
     ports:
       - 1433:1433
     networks:
-          - dev
-          
+      - dev
+
 volumes:
   mssql-data:
     # actually this is the default

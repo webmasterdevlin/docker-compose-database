@@ -1,8 +1,8 @@
-version: "3.7"
+version: "3.8"
 
 services:
   mariadb:
-    image: mariadb:10.4.12
+    image: mariadb:10.5
     restart: always
     environment:
       MYSQL_DATABASE: docker_maria

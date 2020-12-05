@@ -1,8 +1,8 @@
-version: "3.7"
+version: "3.8"
 
 services:
   couchdb:
-    image: couchdb:3
+    image: couchdb:3.1.1
     container_name: CouchDB
     volumes: -couchdb-data:/opt/couchdb/data
     ports:
