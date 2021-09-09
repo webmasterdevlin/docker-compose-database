@@ -26,3 +26,17 @@ networks:
     driver: bridge
 # Address in DatGrip jdbc:sqlserver://localhost\databasename:1433
 # "Data Source=localhost,1433;Initial Catalog=theNameOfTheDataBaseHere;User id=sa;Password=Pass123!;MultipleActiveResultSets=True"
+
+# using Azure Data Studio
+# -- Create a new database called 'MyWebApiDb'
+# -- Connect to the 'master' database to run this snippet
+# USE master
+# GO
+# -- Create the new database if it does not exist already
+# IF NOT EXISTS (
+#     SELECT [name]
+#         FROM sys.databases
+#         WHERE [name] = N'MyWebApiDb'
+# )
+# CREATE DATABASE MyWebApiDb
+# GO
