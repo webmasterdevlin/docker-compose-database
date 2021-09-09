@@ -6,10 +6,16 @@
 $ docker-compose up
 ```
 
+#### Install or update DotNet Core CLI
+
+```
+$ dotnet tool install --global dotnet-ef
+$ dotnet tool update --global dotnet-ef
+```
+
 #### DotNet Core commands
 
 ```zsh
-$ dotnet tool install --global dotnet-ef
 $ dotnet ef migrations add initial
 $ dotnet ef database update
 $ dotnet dev-certs https --clean
