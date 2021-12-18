@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   postgres:
-    image: postgres:13.2-alpine
+    image: postgres:14.1-alpine
     container_name: PostgreSQL
     restart: always
     environment:
@@ -20,4 +20,4 @@ volumes:
 networks:
   dev:
     driver: bridge
-# server connection-string jdbc:postgresql://localhost:5433/databasename
+# server connection-string jdbc:postgresql://localhost:5432/databasename
