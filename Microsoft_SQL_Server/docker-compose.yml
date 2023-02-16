@@ -6,7 +6,7 @@ services:
     container_name: MS_SQL_Server
     restart: always
     environment:
-      SA_PASSWORD: "pass"
+      SA_PASSWORD: "pass" # Pass123!
       ACCEPT_EULA: "Y"
     volumes:
       - mssql-data:/var/opt/mssql
