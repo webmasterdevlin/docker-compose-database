@@ -3,7 +3,7 @@
 #### start
 
 ```zsh
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 #### remove and remove all volumes

@@ -5,7 +5,7 @@
 #### start
 
 ```zsh
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 #### Install or update DotNet Core CLI
