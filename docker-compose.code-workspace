@@ -20,11 +20,15 @@
     },
     {
       "path": "CouchDB"
+    },
+    {
+      "path": "Qdrant"
+    },
+    {
+      "path": "Weaviate"
     }
   ],
   "settings": {
-    "cSpell.words": [
-      "couchdb"
-    ]
+    "cSpell.words": ["couchdb"]
   }
 }
