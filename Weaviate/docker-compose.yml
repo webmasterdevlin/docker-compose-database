@@ -1,4 +1,3 @@
----
 version: "3.8"
 services:
   weaviate:
@@ -9,9 +8,10 @@ services:
       - "8080"
       - --scheme
       - http
-    image: semitechnologies/weaviate:1.21.1
+    image: semitechnologies/weaviate:1.22.5
     ports:
       - 8080:8080
+      - 50051:50051
     volumes:
       - weaviate_data:/var/lib/weaviate
     restart: on-failure:0
