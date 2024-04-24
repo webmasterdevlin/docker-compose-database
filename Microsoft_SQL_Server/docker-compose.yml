@@ -2,10 +2,10 @@ version: "3.8"
 
 services:
   mssql:
-    # image: "mcr.microsoft.com/mssql/server" 
+    # image: "mcr.microsoft.com/mssql/server"
     image: "mcr.microsoft.com/azure-sql-edge" # Apple Silicon compatible
     container_name: MS_SQL_Server
-    restart: always
+    # restart: always
     environment:
       SA_PASSWORD: "Pass123!" # Pass123! or pass
       ACCEPT_EULA: "Y"
