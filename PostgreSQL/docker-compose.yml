@@ -5,7 +5,7 @@ services:
     image: postgres:16.2-alpine3.19
     # restart: always
     environment:
-      POSTGRES_DB: postgresDB
+      POSTGRES_DB: dev_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: pass
     volumes:
