@@ -1,18 +1,18 @@
 services:
   postgres:
-    image: postgres:16.3-alpine3.19
+    image: postgres:17.0
     # restart: always
     environment:
       POSTGRES_DB: dev_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: pass
     volumes:
-      - postgres-data16:/var/lib/postgresql/data
+      - postgres-data17:/var/lib/postgresql/data
     ports:
       - 5432:5432
 
 volumes:
-  postgres-data16:
+  postgres-data17:
 
 networks:
   dev:
